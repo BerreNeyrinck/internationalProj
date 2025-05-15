@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assistance Portal</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="./css/page2.css">
+  <style>
+    .button-container {
+      display: flex;
+      flex-direction: column; /* Arrange buttons vertically */
+      align-items: center; /* Center buttons horizontally */
+      gap: 20px; /* Space between buttons */
+      padding: 20px;
+    }
+
+    .option-button {
+      display: flex;
+      flex-direction: column; /* Arrange icon and text vertically */
+      align-items: center; /* Center icon and text */
+      justify-content: center; /* Center content vertically */
+      width: 300px; /* Adjust as needed */
+      height: 250px; /* Adjust as needed */
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      text-decoration: none;
+      color: #333;
+      font-size: 16px;
+      font-weight: bold;
+      background-color: #f9f9f9;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .option-button i, .option-button img {
+      font-size: 40px; /* Adjust icon size */
+      margin-bottom: 10px;
+      display: block; /* Ensure proper spacing */
+    }
+
+    .option-button img {
+      width: 60px; /* Adjust image width */
+      height: auto; /* Maintain aspect ratio */
+    }
+  </style>
+</head>
+<body>
+  <div class="button-container">
+    <a href="index.html" class="option-button">
+      <i class="fas fa-wheelchair"></i>
+      <span>Request Wheelchair</span>
+    </a>
+    <a href="index.html" class="option-button">
+      <i class="fas fa-person"></i>
+      <span>Request Assistance</span>
+    </a>
+    <a href="index.html" class="option-button">
+      <i class="fas fa-thumbs-up"></i>
+      <span>No Help Needed</span>
+    </a>
+  </div>
+</body>
+</html>
