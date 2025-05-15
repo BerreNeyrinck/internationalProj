@@ -7,7 +7,7 @@
   --dark-color: #212529;
   --gray-color: #6c757d;
   --border-radius: 12px;
-  --box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  --box-shadow: 0 4px 6px rgba(67, 97, 238, 0.2); /* Aangepaste box-shadow */
   --transition: all 0.3s ease;
 }
 
@@ -29,29 +29,28 @@ body {
 .container {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Dit centreert horizontaal */
-  justify-content: center; /* Dit centreert verticaal */
-  min-height: 100vh; /* Zorgt dat het de volledige viewport hoogte gebruikt */
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
   max-width: 1200px;
-  margin: 0 auto; /* Centreert de container zelf */
+  margin: 0 auto;
   padding: 2rem;
 }
 
 /* Pas de header-card aan voor betere centrering */
 .header-card {
   background-color: white;
-  border: 1px solid var(--dark-color);
   border-radius: var(--border-radius);
   padding: 2rem;
   margin-bottom: 2rem;
-  box-shadow: -8px 8px 0 var(--dark-color);
-  width: 100%; /* Neemt volledige breedte van container */
-  max-width: 600px; /* Behoud de maximale breedte */
+  box-shadow: 0 4px 8px rgba(67, 97, 238, 0.2); /* Subtielere schaduw */
+  width: 100%;
+  max-width: 600px;
 }
 
 .header-card h2 {
   font-size: 2rem;
-  font-weight: 600;
+  font-weight: 550;
   color: var(--dark-color);
 }
 
@@ -61,8 +60,8 @@ body {
   border-radius: var(--border-radius);
   padding: 2rem;
   box-shadow: var(--box-shadow);
-  width: 100%; /* Neemt volledige breedte van container */
-  max-width: 600px; /* Behoud de maximale breedte */
+  width: 100%;
+  max-width: 600px;
 }
 
 .form-group {
@@ -164,64 +163,60 @@ body {
   .container {
     margin: 1rem;
   }
-  
+
   .header-card {
     padding: 1.5rem;
   }
-  
+
   .header-card h2 {
     font-size: 1.5rem;
   }
-  
+
   .form-container {
     padding: 1.5rem;
   }
-  
+
   .department-buttons {
     grid-template-columns: repeat(2, 1fr);
   }
 
   .top-bar {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #languagePicker {
+    padding: 0.75rem 1rem;
+    width: 120px;
+    border-radius: 0;
+    border: 2px solid var(--dark-color);
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: var(--transition);
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('data:image/svg+xml;charset=UTF-8,<svg fill="%23212529" height="20" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    background-size: 1rem;
+  }
+
+  #languagePicker:hover {
+    border-color: var(--primary-color);
+  }
+
+  #languagePicker option {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
 }
-
-.header-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-#languagePicker {
-  padding: 0.75rem 1rem;
-  width: 120px;
-  border-radius: 0; /* rechte hoeken */
-  border: 2px solid var(--dark-color);
-  background-color: white;
-  font-family: 'Poppins', sans-serif;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: var(--transition);
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  background-image: url('data:image/svg+xml;charset=UTF-8,<svg fill="%23212529" height="20" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
-  background-repeat: no-repeat;
-  background-position: right 0.75rem center;
-  background-size: 1rem;
-}
-
-#languagePicker:hover {
-  border-color: var(--primary-color);
-}
-
-#languagePicker option {
-  font-size: 1rem;
-  padding: 0.5rem;
-}
-
-
-
-}
-
