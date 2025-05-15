@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Page 2</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+    }
+
+    .container {
+      display: flex;
+      height: 100vh;
+    }
+
+    .left, .right {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /* border: 1px solid #ccc; */
+      font-size: 24px;
+      font-family: Arial, sans-serif;
+    }
+/* 
+    .left {
+      background-color: #f8f9fa;
+    }
+
+    .right {
+      background-color: #e9ecef;
+    } */
+    .container2 {
+        display: grid;
+        grid-template-areas:
+            "header header"
+            "menu content"
+            "footer footer";
+        grid-template-columns: 1fr 2fr;
+        gap: 5px;
+        padding: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="left" >
+      <h1>You can follow the <span style="color: blue;">BLUE</span> line to your destination!</h1>
+    </div>
+    <div class="right">
+        <h1 style="margin-bottom: 30rem;">Your appointment is on Floor3!</h1>
+        <img src="mapSolution3d.png" alt="" data-dept="cardiology">
+    </div>
+  </div>
+
+</body>
+</html>
